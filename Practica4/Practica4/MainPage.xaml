@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Practica4"
+             x:Class="Practica4.MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label Text="Jonathan Eduardo Estrada Gonzalez" ></Label>
+        <Label Text="13090353"></Label>
+        <Button Text="Formulario" x:Name="Formulario" Clicked="Formulario_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

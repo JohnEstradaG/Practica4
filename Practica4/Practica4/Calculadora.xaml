@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica4.Calculadora">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" Text="Jonathan Eduardo Estrada Gonzalez" TextColor="DarkCyan"></Label>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" Text="Ingenieria En Sistemas Computacionales" TextColor = "OrangeRed" ></Label>
+        <Button Grid.Column="3" Grid.Row="1" x:Name="Master" HorizontalOptions="Center" Text="Master Detail Page" TextColor="OrangeRed" Clicked="Master_Clicked"></Button>
+        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" x:Name="Display2" Text="" HorizontalOptions="End" ></Label>
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" x:Name="Display1" Text="" HorizontalOptions="End" ></Label>
+        <Label Grid.Column="3" Grid.Row="0" x:Name="DisplayOp" Text="" ></Label>
+        <Button Grid.Column="0" Grid.Row="2" x:Name="Porciento" Text="%" Clicked="Porciento_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="2" x:Name="Raiz" Text="√" Clicked="Raiz_Clicked"></Button>
+        <Button Grid.Column="2" Grid.Row="2" x:Name="Potencia" Text="X^2" Clicked="Potencia_Clicked"></Button>
+        <Button Grid.Column="3" Grid.Row="2" x:Name="sobre1" Text="1/X" Clicked="sobre1_Clicked"></Button>
+        <Button Grid.Column="0" Grid.Row="3" x:Name="LimpiarG" Text="CE" Clicked="LimpiarG_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="3" x:Name="Limpiar" Text="C" Clicked="Limpiar_Clicked"></Button>
+        <Button Grid.Column="2" Grid.Row="3" x:Name="Borrar" Text="←" Clicked="Borrar_Clicked"></Button>
+        <Button Grid.Column="3" Grid.Row="3" x:Name="Entre" Text="/" Clicked="Entre_Clicked"></Button>
+        <Button Grid.Column="0" Grid.Row="4" x:Name="Siete" Text="7" Clicked="Siete_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="4" x:Name="Ocho" Text="8" Clicked="Ocho_Clicked"></Button>
+        <Button Grid.Column="2" Grid.Row="4" x:Name="Nueve" Text="9" Clicked="Nueve_Clicked"></Button>
+        <Button Grid.Column="3" Grid.Row="4" x:Name="Por" Text="*" Clicked="Por_Clicked"></Button>
+        <Button Grid.Column="0" Grid.Row="5" x:Name="Cuatro" Text="4" Clicked="Cuatro_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="5" x:Name="Cinco" Text="5" Clicked="Cinco_Clicked"></Button>
+        <Button Grid.Column="2" Grid.Row="5" x:Name="Seis" Text="6" Clicked="Seis_Clicked"></Button>
+        <Button Grid.Column="3" Grid.Row="5" x:Name="Resta" Text="-" Clicked="Resta_Clicked"></Button>
+        <Button Grid.Column="0" Grid.Row="6" x:Name="Uno" Text="1" Clicked="Uno_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="6" x:Name="Dos" Text="2" Clicked="Dos_Clicked"></Button>
+        <Button Grid.Column="2" Grid.Row="6" x:Name="Tres" Text="3" Clicked="Tres_Clicked"></Button>
+        <Button Grid.Column="3" Grid.Row="6" x:Name="Mas" Text="+" Clicked="Mas_Clicked"></Button>
+        <Button Grid.Column="0" Grid.Row="7" x:Name="MasMenos" Text="±" Clicked="MasMenos_Clicked"></Button>
+        <Button Grid.Column="1" Grid.Row="7" x:Name="Cero" Text="0" Clicked="Cero_Clicked" ></Button>
+        <Button Grid.Column="2" Grid.Row="7" x:Name="Punto" Text="." Clicked="Punto_Clicked" ></Button>
+        <Button Grid.Column="3" Grid.Row="7" x:Name="Igual" Text="=" Clicked="Igual_Clicked"></Button>
+    </Grid>
+</ContentPage>

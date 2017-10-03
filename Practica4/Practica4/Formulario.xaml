@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica4.Formulario">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Formulario" BackgroundColor="LightBlue" Font="Arial" TextColor="Red" HorizontalOptions="Center" FontSize="25" ></Label>
+                <Label x:Name="titulo1" Text="Datos Personales" Font="Arial" HorizontalOptions="Start" FontSize="25" ></Label>
+                <Entry x:Name="Nombre" Placeholder="Nombre's                  " HorizontalOptions="Start"></Entry>
+                <Entry x:Name="Ape_pat" Placeholder="Apellido Paterno          " HorizontalOptions="Start"></Entry>
+                <Entry x:Name="Ape_mat" Placeholder="Apellido Materno          " HorizontalOptions="Start"></Entry>
+                <DatePicker x:Name="Fecha" HorizontalOptions="Start"></DatePicker>
+                <Entry x:Name="Direccion" Placeholder="Direccion                 " HorizontalOptions="Start"></Entry>
+                <Entry x:Name="Telefono" Placeholder="Telefono  " Keyboard="Telephone" HorizontalOptions="Start"></Entry>
+
+                <Label x:Name="titulo2" Text="Datos Escolares" Font="Arial" HorizontalOptions="Start" FontSize="25" ></Label>
+                <Entry x:Name="Carrera" Placeholder="Carrera                                " HorizontalOptions="Start"></Entry>
+                <Entry x:Name="Semestre" Placeholder="Semestre         " HorizontalOptions="Start"></Entry>
+                <Entry x:Name="Matricula" Placeholder="Matricula " HorizontalOptions="Start" Keyboard="Numeric"></Entry>
+
+                <Label x:Name="titulo3" Text="Datos Sociales" Font="Arial" HorizontalOptions="Start" FontSize="25" ></Label>
+                <Entry x:Name="Correo" Placeholder="Correo                                 " HorizontalOptions="Start" Keyboard="Email"></Entry>
+                <Entry x:Name="Github" Placeholder="Github                                 " HorizontalOptions="Start" Keyboard="Url"></Entry>
+                <Button x:Name="Presionar" Text=" Leer Datos " HorizontalOptions="Center" Clicked="Presionar_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
